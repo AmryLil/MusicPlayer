@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+
+    >
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2main"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <RelativeLayout
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Music Player"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:alpha="0.8"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_name"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:background="@drawable/container_custom"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="#37C59C"
+                android:textSize="37sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Already Registered ?"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tologin"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:text="Log in here!"
+                android:textStyle="bold"
+                android:textColor="#37C59C"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="@style/FullRoundedOutlinedBoxTextInputLayout"
+                android:hint="FullName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textfullname"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionDone"
+                    android:textSize="12dp"
+                    android:padding="10dp"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="262dp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:fontFamily="@font/poppins"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                style="@style/FullRoundedOutlinedBoxTextInputLayout"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textemail"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="262dp"
+
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                style="@style/FullRoundedOutlinedBoxTextInputLayout"
+                android:hint="Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textpassword"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="12dp"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="262dp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                style="@style/FullRoundedOutlinedBoxTextInputLayout"
+                android:hint="Confirm Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textconfirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="12dp"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="262dp"
+
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="SIGN UP"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

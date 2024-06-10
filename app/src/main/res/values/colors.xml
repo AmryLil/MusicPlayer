@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#0C0C0C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_outlined_box_stroke_color">#CCCCCC</color>
+    <color name="blue">#347CFA</color>
+
+    <!-- Warna garis ketika aktif atau fokus -->
+    <color name="my_outlined_box_stroke_color_focused">#FF5722</color>
+
+    <!-- Warna teks saat tidak aktif -->
+    <color name="my_text_color_hint">#999999</color>
+
+    <!-- Warna teks saat aktif atau fokus -->
+    <color name="my_hint_text_color_focused">#FF5722</color>
+    <color name="red">#FF5722</color>
+    <color name="kuning_gading">#FFFFF0</color>
+    <color name="gray">#17202A</color>
+</resources>

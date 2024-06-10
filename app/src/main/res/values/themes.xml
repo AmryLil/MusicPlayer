@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MusicPlayer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+        <!-- Tema aplikasi -->
+
+    <style name="Theme.MusicPlayer" parent="Base.Theme.MusicPlayer" />
+
+    <style name="MyOutlinedBoxTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Warna garis ketika tidak aktif -->
+        <item name="boxStrokeColor">@color/my_outlined_box_stroke_color</item>
+
+        <!-- Warna garis ketika aktif atau fokus -->
+        <!--        <item name="boxStrokeColorFocused">@color/my_outlined_box_stroke_color_focused</item>-->
+
+        <!-- Warna teks saat tidak aktif -->
+        <item name="android:textColorHint">@color/black</item>
+
+        <!-- Warna teks saat aktif atau fokus -->
+        <item name="hintTextColor">@color/black</item>
+
+        <!-- Ukuran teks -->
+        <item name="android:textSize">16sp</item>
+
+        <!-- Dan properti gaya lainnya sesuai kebutuhan Anda -->
+    </style>
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Tambahkan atribut lainnya di sini -->
+        <item name="android:tint">@color/black</item>
+    </style>
+
+    <style name="FullRoundedOutlinedBoxTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.FullRounded</item>
+        <item name="boxStrokeColor">@color/my_outlined_box_stroke_color</item>
+
+        <!-- Warna garis ketika aktif atau fokus -->
+        <!--        <item name="boxStrokeColorFocused">@color/my_outlined_box_stroke_color_focused</item>-->
+
+        <!-- Warna teks saat tidak aktif -->
+        <item name="android:textColorHint">@color/black</item>
+
+        <!-- Warna teks saat aktif atau fokus -->
+        <item name="hintTextColor">@color/black</item>
+
+        <!-- Ukuran teks -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.FullRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:textColorHint">@color/my_text_color_hint</item>
+        <item name="boxStrokeColor">@color/my_outlined_box_stroke_color</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+    <style name="CustomFontTextView">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="searchcolor" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+</resources>
